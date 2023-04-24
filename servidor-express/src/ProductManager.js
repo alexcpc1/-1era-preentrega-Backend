@@ -18,7 +18,7 @@ class ProductManager {
         return newId;
     }
 
-    async addProduct (title, descripcion, price, thumbnail, code, stock){
+    async addProduct ({title, descripcion, price, thumbnail, code, stock}){
         
         if(!title || !descripcion || !price || !thumbnail|| !code || !stock){
          return console.log("Todos los campos deben ser Obligatorios");
